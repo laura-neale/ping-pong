@@ -23,7 +23,7 @@ public class Pinger implements Runnable {
                     monitor.notifyAll();
 
                     boolean flag = monitor.getPinged();
-                    while (monitor.getPinged() == flag) {
+                    while (monitor.getPinged() == flag && isNotFinalLoop(i)) {
                         monitor.wait();
                     }
                 }
@@ -33,5 +33,9 @@ public class Pinger implements Runnable {
                 break;
             }
         }
+    }
+
+    private boolean isNotFinalLoop(int i) {
+        return i < LOOP_LIMIT - 1;
     }
 }

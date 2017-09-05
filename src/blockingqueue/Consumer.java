@@ -1,4 +1,4 @@
-package com.github.lauraneale.blockingqueue;
+package blockingqueue;
 
 public class Consumer implements Runnable {
 

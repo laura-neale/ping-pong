@@ -1,4 +1,4 @@
-package com.github.lauraneale.blockingqueue;
+package blockingqueue;
 
 public class Producer implements Runnable {
 

@@ -1,4 +1,4 @@
-package com.github.lauraneale.pingpong;
+package pingpong;
 
 public class SynchronizedMessenger implements Runnable {
 

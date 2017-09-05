@@ -1,4 +1,4 @@
-package com.github.lauraneale.blockingqueue;
+package blockingqueue;
 
 import java.util.ArrayList;
 import java.util.List;

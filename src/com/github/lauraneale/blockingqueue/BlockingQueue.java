@@ -7,11 +7,12 @@ import java.util.Queue;
 
 public class BlockingQueue {
 
-    private final int size = 5;
+    private final int size;
     private final List<Integer> queue;
 
-    public BlockingQueue() {
+    public BlockingQueue(int size) {
         queue = new ArrayList<>();
+        this.size = size;
     }
 
     public synchronized void add(int s) throws InterruptedException {
